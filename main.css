@@ -159,10 +159,11 @@ ul{
 .footer-col{
    width: 25%;
    padding: 0 15px;
+   border-right: #bbbbbb solid 2px;
 }
-.footer-col:not(:last-child){
-    border-right: #bbbbbb solid 2px;
- }
+.colu{
+    border: none;
+}
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;

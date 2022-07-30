@@ -12,6 +12,7 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
+                    <th>Student RollNo</th>
                     <th>Student Name</th>
                     <th>Total Marks</th>
                     <th>Enter Marks</th>
@@ -20,6 +21,7 @@
                 <tbody>
                     {% for m in m_list %}
                     <tr>
+                    <td>{{m.studentcourse.student.USN}}</td>
                     <td>{{m.studentcourse.student.name}}</td>
                     <td>{{ m.total_marks }}</td>
                     <td>

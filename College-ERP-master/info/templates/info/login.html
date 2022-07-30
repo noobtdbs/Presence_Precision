@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
     <title>Login</title>
 
       {% load static %}
@@ -22,12 +22,24 @@
     <!-- Custom styles for this template-->
     <link href="{% static '/info/bootstrap/css/sb-admin.css' %}" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
   </head>
 
-  <body class="bg-dark">
-
-    <div class="container">
-      <div class="card card-login mx-auto mt-5">
+  <body>
+<!-- header -->
+<div class='parent'>
+  <div class='image'><img src="https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png" alt="logo" /></div>
+  <div class='text'>
+      <p>Indian Institute of Information Technology, Lucknow<br/><br/>
+      भारतीय सूचना प्रौद्योगिकी संस्थान, लखनऊ<br/><br/>
+      (An Institute of National Importance by the Act of Parliament)</p>
+  </div>
+</div>
+<!-- main -->
+    <div class="middle">
+      <div class="card card-login mx-auto">
         <div class="card-header">Login</div>
         <div class="card-body">
             <form method="post">
@@ -40,7 +52,6 @@
       </div>
     </div>
 
-
     <!-- Bootstrap core JavaScript-->
     <script src="{% static '/info/bootstrap/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static '/info/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
@@ -48,7 +59,53 @@
     <!-- Core plugin JavaScript-->
     <script src="{% static '/info/bootstrap/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
    
+<style>
+  /* Header */
+.parent{
+    height: 30%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #24262b;
+}
+.text{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgba(255 255 255 / 0.85);
+}
+.image{
+    flex: 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 40%;
+}
+/* middle */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.middle{
+  height: 69vh;
+  background-image: url('https://images.shiksha.com/mediadata/images/1609328511phpF7Rjbe.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
+/*responsive*/
+@media(max-width: 950px){
+    .parent1{
+      height: 100vh;
+  }
+}
+
+</style>
   </body>
 
 </html>
